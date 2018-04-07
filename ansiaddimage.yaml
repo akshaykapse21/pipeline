@@ -1,0 +1,11 @@
+---
+- hosts: webservers
+  remote_user: root
+  tasks:
+#  - name: pull image
+#      docker_image:
+#         name: ubuntu
+#         state: present
+  - name: pull an image
+    docker_image:
+      name: pacur/centos-7
